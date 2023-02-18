@@ -1,0 +1,59 @@
+{
+    "status": "ok",
+    "totalResults": 37,
+    "articles": [
+    {
+    "source": {
+    "id": "independent",
+    "name": "Independent"
+    },
+    "author": "Jamie Braidwood",
+    "title": "PGA Championship 2022 LIVE: Leaderboard and latest updates - The Independent",
+    "description": "Follow all the action from the third round at Southern Hills as Will Zalatoris takes a lead into the weekend",
+    "url": "https://www.independent.co.uk/sport/golf/pga-championship-2022-live-leaderboard-updates-b2084257.html",
+    "urlToImage": "https://static.independent.co.uk/2022/05/21/15/GettyImages-1398486023.jpg?quality=75&width=1200&auto=webp",
+    "publishedAt": "2022-05-21T14:32:30Z",
+    "content": "Tiger Woods was among the early starters on Moving Day at Southern Hills \r\nFollow all the action as Will Zalatoris takes a one-shot lead into the third round of the PGA Championship. \r\nThe 25-year-ol… [+4298 chars]"
+    },
+    {
+    "source": {
+    "id": "cnn",
+    "name": "CNN"
+    },
+    "author": "By <a href=\"/profiles/jessie-yeung\">Jessie Yeung</a>, Hannah Ryan, <a href=\"/profiles/luke-mcgee\">Luke McGee</a>, <a href=\"/profiles/adrienne-vogt\">Adrienne Vogt</a> and <a href=\"/profiles/joe-ruiz\">Joe Ruiz</a>, CNN",
+    "title": "Russia's war in Ukraine: Live updates - CNN",
+    "description": "Russia claims it has taken control of the Azovstal steel plant in the besieged port city of Mariupol. Meanwhile, heavy fighting continues in eastern Ukraine, with Russian strikes hitting civilian structures. Follow here for live updates.",
+    "url": "https://www.cnn.com/europe/live-news/russia-ukraine-war-news-05-21-22/index.html",
+    "urlToImage": "https://dynaimage.cdn.cnn.com/cnn/digital-images/org/449b0488-4a8b-454e-a755-171f6d608163.JPG",
+    "publishedAt": "2022-05-21T14:21:00Z",
+    "content": "Russia on Friday claimed its troops have \"completely liberated\" the Azovstal steel plant in Mariupol the final holdout of Ukrainian resistance in the otherwise Russian-occupied southern city.\r\nCNN ca… [+2617 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "Fox Business"
+    },
+    "author": "Julia Musto",
+    "title": "Boeing Starliner docks to International Space Station for first time - Fox Business",
+    "description": "The Boeing Starliner autonomously docked to the space station on Friday night. The mission was designed to give Boeing and NASA enough data to certify the spacecraft for long-duration crewed missions to the orbiting laboratory.",
+    "url": "https://www.foxbusiness.com/technology/boeing-starliner-docks-space-station-first-time",
+    "urlToImage": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2022/05/0/0/Starliner-Dock-2.jpg?ve=1&tl=1",
+    "publishedAt": "2022-05-21T13:39:31Z",
+    "content": "The Boeing CST-100 Starliner docked to the International Space Station for the first time on Friday night. \r\nThe spacecraft made its first connection with the International Space Station's (ISS) Harm… [+3644 chars]"
+    },
+    {
+    "source": {
+    "id": "associated-press",
+    "name": "Associated Press"
+    },
+    "author": "John Flesher",
+    "title": "Rare northern Michigan tornado kills 1, injures more than 40 - The Associated Press",
+    "description": "GAYLORD, Mich. (AP) — A rare northern Michigan tornado tore through a small community on Friday, killing at least one person and injuring more than 40 others as it flipped vehicles, tore roofs from buildings and downed trees and power lines.",
+    "url": "https://apnews.com/article/tornadoes-michigan-detroit-weather-d49ca0c7505cd7c3eda55132ea6eca5d",
+    "urlToImage": "https://storage.googleapis.com/afs-prod/media/234d5417bfa24780a0a4b616ad32416c/2000.jpeg",
+    "publishedAt": "2022-05-21T13:26:51Z",
+    "content": "GAYLORD, Mich. (AP) A rare northern Michigan tornado tore through a small community on Friday, killing at least one person and injuring more than 40 others as it flipped vehicles, tore roofs from bui… [+4825 chars]"
+    }
+    ]
+
+    
