@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 
-import React, { Component } from 'react'
+import React from 'react'
 import Navbar from './Components/Navbar';
 import News from './News';
 import { BrowserRouter, Routes, Route} from "react-router-dom";

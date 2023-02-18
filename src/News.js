@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import Loading from "./Components/Loading"
-import Innernews from "./Innernews.js"
+
 
 const News = () => {
 
@@ -10,6 +10,7 @@ const News = () => {
   useEffect(() => {
 
     Getdata();
+    setLoading(true);
   
    
   }, [])
@@ -113,7 +114,7 @@ return dateString;
             return (
               <>
               
-              <div className="col-md-4 my-5" key={i}>
+              <div className="col-md-4 my-5" id={i}>
               <div>
           <div className="card">
             <a href="https://allpunejobs.com/how-to-write-an-email-asking-for-a-job-vacancy/" target="_blank"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyunySe7_G8vZf3CFvzbRg8vQY-9SIQVXMQA&usqp=CAU" className="card-img-top" alt="..." /></a>
@@ -122,11 +123,11 @@ return dateString;
               <h5 className="card-title">Company Name : <div className="rightKey">{element.companyName}</div></h5>
               <h5 className="card-title">Company Location : <div className="rightKey">{element.Location.map((data,i)=>
               {
-                return <div>{data}</div>
+                return <div id={i}>{data}</div>
               })}</div></h5>
               <h5 className="card-title">Profiles :<div className="rightKey"><ol> {element.Profiles.map((data,i)=>
               {
-                return <li><div>{data}</div></li>
+                return <li id={i}><div>{data}</div></li>
               })}</ol></div></h5>
              
               <h5 className="card-title">Working Days : <div className="rightKey">{element.WorkingDays}</div></h5>
