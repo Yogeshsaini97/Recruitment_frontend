@@ -107,8 +107,8 @@ return dateString;
      <div style={{display: "flex",
     justifyContent: "flex-end",fontfamily: "cursive",
     fontWeight: "bolder"}}> {showdate()}</div>
-        <h1 className=" my-2">Welcome!!!!</h1>
-        <h1 className=" my-3">Here are some of the Jobs pasted by HR Today</h1>
+        <h1 className=" my-2">Welcome!!!! We updates Jobs postings here Daily</h1>
+        <h1 className=" my-3">Here are some of the Jobs posted by company HR's Today</h1>
         <div className="row ">
           {articles.reverse().map((element,i) => {
             return (
@@ -136,7 +136,7 @@ return dateString;
               <h5 className="card-title">HR Email Id :<div className="rightKey" style={{color:"red"}}> {element.Hremailid}</div></h5>
              
 
-              Hurry!! Send mail and grab your job today
+              Hurry!! Create your beautifull email template And start Sending job application from Today to impress the recruiters...
             
             </div>
           </div>
