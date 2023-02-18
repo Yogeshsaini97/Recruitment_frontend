@@ -117,7 +117,7 @@ return dateString;
               <div className="col-md-4 my-5" id={i}>
               <div>
           <div className="card">
-            <a href="https://allpunejobs.com/how-to-write-an-email-asking-for-a-job-vacancy/" target="_blank"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyunySe7_G8vZf3CFvzbRg8vQY-9SIQVXMQA&usqp=CAU" className="card-img-top" alt="..." /></a>
+            <a href="https://allpunejobs.com/how-to-write-an-email-asking-for-a-job-vacancy/" target="_blank"  rel="noreferrer noopener"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyunySe7_G8vZf3CFvzbRg8vQY-9SIQVXMQA&usqp=CAU" className="card-img-top" alt="..." /></a>
             <div className="card-body">
             <h5 className="card-title">Job Posted on :<div className="rightKey"> {formatDate(element.createdAt)}</div></h5>
               <h5 className="card-title">Company Name : <div className="rightKey">{element.companyName}</div></h5>
