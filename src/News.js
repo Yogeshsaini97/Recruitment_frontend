@@ -21,7 +21,7 @@ const News = () => {
  
       //   console.log("inside" + params._id );
       const response = await fetch(
-        `http://localhost:5000/addcompany`,
+        `https://sore-erin-springbok-belt.cyclic.app/addcompany`,
         {
           method: "GET", // *GET, POST, PUT, DELETE, etc.
           mode: "cors", // no-cors, *cors, same-origin
