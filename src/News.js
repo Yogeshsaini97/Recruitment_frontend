@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import Loading from "./Components/Loading"
+import ReactGA from "react-ga"
 
 
 const News = () => {
@@ -11,6 +12,7 @@ const News = () => {
 
     Getdata();
     setLoading(true);
+    ReactGA.pageview(window.location.pathname)
   
    
   }, [])
