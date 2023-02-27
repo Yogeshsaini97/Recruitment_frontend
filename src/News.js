@@ -1,12 +1,26 @@
 import React,{useState,useEffect} from 'react'
 import Loading from "./Components/Loading"
 import ReactGA from "react-ga"
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  IconButton,
+  InputBase,
+  Paper,
+} from "@mui/material";
+// import MailIcon from "../MainIcons/MailIcon";
+import SearchIcon from "@mui/icons-material/Search";
 
 
 const News = () => {
 
   const [articles,setArticles]=useState([])
   const [loading,setLoading]=useState(true)
+  const [userFixedData, setUserFixedData] = useState(null);
+  const [usersdata, setusersdata] = useState(null);
 
   useEffect(() => {
 
@@ -43,7 +57,15 @@ const News = () => {
       console.log("inside useeffeee of formid");
       const data = await response.json();
       console.log(data);
-      setArticles(data);
+  
+      for(let i = 0, j = data.length - 1; i < j; i++, j--) {
+        const temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
+    }
+    console.log(data)
+    setUserFixedData(data);
+    setusersdata(data);
   }
 
 
@@ -99,7 +121,42 @@ return dateString;
   }
 
 
+  function searchJson(jsonData, searchTerm) {
+    let results = [];
 
+    for (let i = 0; i < jsonData.length; i++) {
+      let object = jsonData[i];
+      for (let property in object) {
+        if (object.hasOwnProperty(property)) {
+          if (
+            typeof object[property] === "string" &&
+            object[property].includes(searchTerm)
+          ) {
+            results.push(object);
+            break;
+          }
+        }
+      }
+    }
+    // console.log("reached")
+    // console.log(usersdata)
+    console.log(results);
+    setusersdata(results);
+  }
+
+
+// const reverseArray=(usersdata)=>
+// {
+//   for(let i = 0, j = usersdata.length - 1; i < j; i++, j--) {
+//     const temp = usersdata[i];
+//     usersdata[i] = usersdata[j];
+//     usersdata[j] = temp;
+// }
+// console.log(usersdata)
+// return usersdata;
+// }
+
+// reverseArray();
 
   return (
     <div className="container my-5">
@@ -111,8 +168,29 @@ return dateString;
     fontWeight: "bolder"}}> {showdate()}</div>
         <h1 className=" my-2">Welcome!!!! We updates Jobs postings here Daily</h1>
         <h1 className=" my-3">Here are some of the Jobs posted by company HR's Today</h1>
+        <div className="Controlsearchbar">
+        
+          <Paper component="form" className="style">
+            <IconButton type="button" id="IconSearch" aria-label="search">
+              <SearchIcon />
+            </IconButton>
+            <InputBase
+              id="SearchInput11"
+              onChange={(e) => {
+                e.preventDefault();
+                //  console.log( searchJson(usersdata, e.target.value));
+                console.log(e.target.value);
+                searchJson(userFixedData, e.target.value);
+              }}
+              placeholder="Search here..."
+              inputProps={{ "aria-label": "Search..." }}
+            />
+          </Paper>
+        </div>
+       
         <div className="row ">
-          {articles.reverse().map((element,i) => {
+          {usersdata &&
+                usersdata.reverse().map((element,i) => {
             return (
               <>
               
@@ -123,14 +201,8 @@ return dateString;
             <div className="card-body">
             <h5 className="card-title">Job Posted on :<div className="rightKey"> {formatDate(element.createdAt)}</div></h5>
               <h5 className="card-title">Company Name : <div className="rightKey">{element.companyName}</div></h5>
-              <h5 className="card-title">Company Location : <div className="rightKey">{element.Location.map((data,i)=>
-              {
-                return <div id={i}>{data}</div>
-              })}</div></h5>
-              <h5 className="card-title">Profiles :<div className="rightKey"><ol> {element.Profiles.map((data,i)=>
-              {
-                return <li id={i}><div>{data}</div></li>
-              })}</ol></div></h5>
+              <h5 className="card-title">Company Location : <div className="rightKey">{element.Location}</div></h5>
+              <h5 className="card-title">Profiles :<div className="rightKey">{element.Profiles}</div></h5>
              
               <h5 className="card-title">Working Days : <div className="rightKey">{element.WorkingDays}</div></h5>
               <h5 className="card-title">Experience Required : <div className="rightKey">{element.experienceRequired}</div></h5>
