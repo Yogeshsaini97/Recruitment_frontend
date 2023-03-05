@@ -189,7 +189,7 @@ return dateString;
         </div>
        
         <div className="row ">
-          {usersdata &&
+          {userFixedData || usersdata &&
                 usersdata.reverse().map((element,i) => {
             return (
               <>
